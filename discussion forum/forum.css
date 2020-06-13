@@ -1,0 +1,9 @@
+.border{
+	display: block;
+	border: 3px solid red;
+	margin-left: 500px;
+	margin-right: 500px;
+	padding: 5px;
+	padding-bottom: 50px; 
+	background-color: grey;
+}

@@ -1,0 +1,41 @@
+CREATE TABLE IF NOT EXISTS `articles` (  
+  `id` int(11) NOT NULL AUTO_INCREMENT,  
+  `title` text,  
+  PRIMARY KEY (`id`)  
+ ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;  
+ --  
+ -- Dumping data for table `articles`  
+ --  
+ INSERT INTO `articles` (`id`, `title`) VALUES  
+ (1, 'Ajax Jquery Drag and Drop Shopping Cart using PHP Mysql'),  
+ (2, 'Make PHP Hashtag system by using Regular Expression'),  
+ (3, 'Ajax Jquery Column Sort with PHP & MySql'),  
+ (4, 'Drag and drop Upload multiples File By Ajax JQuery PHP');  
+ -- --------------------------------------------------------  
+ --  
+ -- Table structure for table `article_likes`  
+ --  
+ CREATE TABLE IF NOT EXISTS `article_likes` (  
+  `id` int(11) NOT NULL AUTO_INCREMENT,  
+  `user` int(11) NOT NULL,  
+  `article` int(11) NOT NULL,  
+  PRIMARY KEY (`id`)  
+ ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=46 ;  
+ --  
+ -- Dumping data for table `article_likes`  
+ --  
+ -- --------------------------------------------------------  
+ --  
+ -- Table structure for table `user`  
+ --  
+ CREATE TABLE IF NOT EXISTS `user` (  
+  `id` int(11) NOT NULL AUTO_INCREMENT,  
+  `name` text NOT NULL,  
+  PRIMARY KEY (`id`)  
+ ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;  
+ --  
+ -- Dumping data for table `user`  
+ --  
+ INSERT INTO `user` (`id`, `name`) VALUES  
+ (1, 'john'),  
+ (2, 'jack');  
